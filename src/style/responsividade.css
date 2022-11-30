@@ -11,15 +11,19 @@
     }
 
     nav ul,
-    nav button:nth-child(4) {
+    nav button:nth-child(5),
+    .close-menu {
         display: none;
     }
 
     .open-menu {
-        background-color: transparent;
-
-        width: 2rem;
         display: block;
+    }
+
+    .close-menu,
+    .open-menu{
+        width: 2rem;
+        background-color: transparent;
     }
 
     /* Banner */
@@ -93,14 +97,46 @@
         border-radius: 0;
     }
 
-    .links-footer h2{
+    .links-footer h2 {
         font-size: 2rem;
 
         margin-bottom: 1rem;
     }
 
-    .links-footer ul{
+    .links-footer ul {
         margin-left: 2rem;
     }
 
+    /* Expandir menu */
+
+    .menu-expanded {
+        height: 100%;
+        width: 100%;
+
+        overflow: hidden;
+
+        background-color: rgb(201, 27, 71);
+    }
+
+    body.menu-expanded> :not(nav) {
+        visibility: hidden;
+    }
+
+    body.menu-expanded nav ul{
+        position: absolute;
+        margin-top: 30rem;
+    }
+
+    body.menu-expanded nav ul li{
+        margin-bottom: 2.5rem;
+    }
+
+    body.menu-expanded nav .close-menu,
+    body.menu-expanded nav ul {
+        display: block
+    }
+
+    body.menu-expanded nav .open-menu{
+        display: none;
+    }   
 }
