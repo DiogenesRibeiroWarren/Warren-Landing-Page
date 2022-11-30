@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat';
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+
+    width: 100%;
+    height: 4rem;
+
+    background-color: rgb(201, 27, 71);
+    color: white;
+}
+
+nav img {
+    height: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+
+    gap: 6rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    color: white;
+
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.623);
+}
+
+nav button {
+    width: 6rem;
+    height: 2rem;
+
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+
+    border: none;
+    border-radius: 1rem;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+nav button:hover {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+/* Banner */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+
+    width: 100%;
+    height: 30rem;
+
+    background-color: rgb(224, 43, 87);
+    color: white;
+
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+}
+
+.banner-text button {
+    width: 8rem;
+    height: 2rem;
+
+    border: none;
+    border-radius: .5rem;
+
+    background-color: white;
+    color: black;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.banner-text button:hover {
+    width: 10rem;
+}
+
+header img {
+    height: 28rem;
+    width: 25rem;
+
+    border-radius: 1rem;
+}
+
+/* Destaques */
+
+.destaques {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 60%;
+
+    margin-top: 3rem;
+    margin-inline: auto;
+}
+
+.primeiro-destaque img {
+    height: 30rem;
+
+    border-radius: 1rem;
+}
+
+.informations {
+    width: 20rem;
+
+    color: rgb(65, 65, 65);
+}
+
+.informations h2 {
+    margin-bottom: 2rem;
+
+    color: black;
+}
+
+/* Faixa */
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 13rem;
+    width: 52%;
+
+    margin-top: 5rem;
+    margin-inline: auto;
+
+    padding: 1rem;
+
+    background-color: rgb(224, 43, 87);
+    color: white;
+
+    border-radius: 1rem;
+}
+
+.text h2 {
+    font-size: 2.3rem;
+}
+
+article button {
+    height: 2rem;
+    width: 7rem;
+
+    border: none;
+    border-radius: 1rem;
+
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+
+    width: 100%;
+    height: 20rem;
+
+    margin-top: 5rem;
+
+    background-color: rgb(224, 43, 87);
+    color: white;
+
+    border-radius: 1rem 1em 0rem 0rem;
+}
+
+.links-footer h2{
+    margin-bottom: 3rem;
+}
+
+.links-footer ul{
+    line-height: 2.5rem;
+}
+
+.links-footer ul li{
+    list-style: none;
+}
+
+.links-footer ul li a{
+    text-decoration: none;
+
+    color: white;
+}
