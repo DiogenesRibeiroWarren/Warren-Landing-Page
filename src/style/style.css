@@ -7,6 +7,15 @@
     font-family: 'Montserrat';
 }
 
+:root{
+    --main-color-warren: rgb(224, 43, 87);
+    --second-color: white;
+
+    --color-navbar: rgb(201, 27, 71);
+
+    --color-black: black;
+}
+
 /* Nav */
 
 nav {
@@ -19,8 +28,8 @@ nav {
     width: 100%;
     height: 4rem;
 
-    background-color: rgb(201, 27, 71);
-    color: white;
+    background-color: var(--color-navbar);
+    color: var(--second-color);
 }
 
 nav img {
@@ -41,7 +50,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
 
-    color: white;
+    color: var(--second-color);
 
     transition: .3s;
 }
@@ -54,11 +63,11 @@ nav button {
     width: 6rem;
     height: 2rem;
 
-    background-color: rgba(0, 0, 0, 0.651);
-    color: white;
+    background-color: var(--second-color);
+    color: var(--color-black);
 
     border: none;
-    border-radius: 1rem;
+    border-radius: .5rem;
 
     cursor: pointer;
 
@@ -66,7 +75,7 @@ nav button {
 }
 
 nav button:hover {
-    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 1rem;
 }
 
 .open-menu,
@@ -89,8 +98,8 @@ header {
     width: 100%;
     height: 30rem;
 
-    background-color: rgb(224, 43, 87);
-    color: white;
+    background-color: var(--main-color-warren);
+    color: var(--second-color);
 
     border-radius: 0rem 0rem 1rem 1rem;
 }
@@ -109,8 +118,8 @@ header {
     border: none;
     border-radius: .5rem;
 
-    background-color: white;
-    color: black;
+    background-color: var(--second-color);
+    color: var(--color-black);
 
     cursor: pointer;
 
@@ -156,7 +165,7 @@ header img {
 .informations h2 {
     margin-bottom: 2rem;
 
-    color: black;
+    color: var(--color-black);
 }
 
 /* Faixa */
@@ -177,8 +186,8 @@ article {
     padding: 1rem;
     box-sizing: border-box;
 
-    background-color: rgb(224, 43, 87);
-    color: white;
+    background-color: var(--main-color-warren);
+    color: var(--second-color);
 
     border-radius: 1rem;
 }
@@ -211,8 +220,8 @@ footer{
 
     margin-top: 5rem;
 
-    background-color: rgb(224, 43, 87);
-    color: white;
+    background-color: var(--main-color-warren);
+    color: var(--second-color);
 
     border-radius: 1rem 1em 0rem 0rem;
 }
@@ -232,5 +241,5 @@ footer{
 .links-footer ul li a{
     text-decoration: none;
 
-    color: white;
+    color: var(--second-color);
 }
