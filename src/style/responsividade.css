@@ -59,6 +59,11 @@
         display: none;
     }
 
+    .informations button{
+        height: 2rem;
+        width: 6rem;
+    }
+
     /* Footer */
 
     article {
